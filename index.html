@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="music-player">
+
+        <h1>🎵 Music Player</h1>
+
+        <div class="album-art">
+            <span>🎧</span>
+        </div>
+
+        <div class="song-info">
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist-name">Artist Name</p>
+        </div>
+
+        <audio id="audio"></audio>
+
+        <div class="time-container">
+            <span id="current-time">0:00</span>
+
+            <input
+                type="range"
+                id="progress-bar"
+                value="0"
+                min="0"
+                max="100"
+            >
+
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" title="Previous">⏮</button>
+
+            <button id="play-btn" title="Play">▶</button>
+
+            <button id="next-btn" title="Next">⏭</button>
+        </div>
+
+        <div class="volume-container">
+            <label for="volume">🔊 Volume</label>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.7"
+            >
+        </div>
+
+        <div class="playlist-container">
+            <h3>My Playlist</h3>
+            <ul id="playlist"></ul>
+        </div>
+
+        <p id="status-message" aria-live="polite"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
