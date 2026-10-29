@@ -2,17 +2,17 @@ const songs = [
     {
         title: "Song One",
         artist: "Artist One",
-        src: "songs/song1.mp3"
+        src: "./song1.mp3"
     },
     {
         title: "Song Two",
         artist: "Artist Two",
-        src: "songs/song2.mp3"
+        src: "./song2.mp3"
     },
     {
         title: "Song Three",
         artist: "Artist Three",
-        src: "songs/song3.mp3"
+        src: "./song3.mp3"
     }
 ];
 
